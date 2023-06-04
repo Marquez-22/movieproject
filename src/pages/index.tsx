@@ -1,4 +1,5 @@
 
+import { Container } from '@/Components/Container'
 import { ContentCard } from '@/Components/ContentCard'
 import { Header } from '@/Components/Header'
 
@@ -16,15 +17,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
-        <Header/>
-       
-      <ContentCard/>
 
-      
-    
-      
-     
+      <Header />
+      <Container>
+        <ContentCard />
+      </Container>
+
+
+
+
+
+
+
     </>
   )
 }
