@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #1a1e52;
+}
+
+.Card {
+  width: 100%;
+  background-color: #747dff;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  width: min(100%, 18.7rem);
+  gap: 1rem;
+}
+
+.Description {
+  background: #fff;
+  padding: 2rem;
+  width: 100%;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  line-height: 2rem;
+}
+.Description .title {
+  font-size: 1.17rem;
+  font-weight: 700;
+}
+.Description .text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.ImgTexto {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.ImgTexto .contentDescription {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: absolute;
+  inset: 0;
+  transform: translateY(100%);
+  transition: 0.5s;
+  background-color: white;
+}
+.ImgTexto:hover .contentDescription {
+  transform: translateY(0%);
+}
+.ImgTexto .textNumber {
+  display: grid;
+  grid-template-columns: 1fr 2rem;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "Text number";
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+}
+.ImgTexto .textNumber .Text {
+  grid-area: Text;
+}
+.ImgTexto .textNumber .Number {
+  grid-area: number;
+}
+
+.ContentCard {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.Header {
+  height: 4.8rem;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  background: #747dff;
+  z-index: 10;
+}
+
+.InputSearch {
+  background: transparent;
+  display: inline;
+  display: flex;
+  justify-content: flex-end;
+}
+.InputSearch .input {
+  background: #747dff;
+  padding: 0.5rem 1rem;
+  border: 2px solid #22254b;
+  border-radius: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+}
+.InputSearch .input::placeholder {
+  color: white;
+}
+.InputSearch .input:focus {
+  outline: none;
+  background-color: #5159c9;
+}
+
+.Number {
+  background-color: #5159c9;
+  padding: 0.1rem;
+  border-radius: 3px;
+  width: min(100%, 2rem);
+  align-items: center;
+}
+.Number.valor-0 {
+  color: #e40e0e;
+}
+.Number.valor-1 {
+  color: #e40e0e;
+}
+.Number.valor-2 {
+  color: #e40e0e;
+}
+.Number.valor-3 {
+  color: #e40e0e;
+}
+.Number.valor-4 {
+  color: #e40e0e;
+}
+.Number.valor-5 {
+  color: orange;
+}
+.Number.valor-6 {
+  color: orange;
+}
+.Number.valor-7 {
+  color: orange;
+}
+.Number.valor-8 {
+  color: rgb(14, 228, 14);
+}
+.Number.valor-9 {
+  color: rgb(14, 228, 14);
+}
+.Number.valor-10 {
+  color: rgb(14, 228, 14);
+}
+
+/*# sourceMappingURL=index.css.map */
